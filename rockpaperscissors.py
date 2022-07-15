@@ -1,8 +1,15 @@
+import random
+
+com_select = random.randint(0, 2)
+values = ['rock', 'paper', 'scissors']
+com_choice = values[com_select]
+
 print("...rock...")
 print("...paper...")
 print("...scissors...")
-firstChoice = input("(enter Player 1's choice): ");
-secondChoice = input("(enter Player 2's choice): ");
+firstChoice = input("(enter Player 1's choice): ").lower()
+secondChoice = com_choice
+print(f"computer's choice is: {com_choice}")
 print("Shoot!")
 
 if firstChoice == secondChoice:
@@ -10,17 +17,17 @@ if firstChoice == secondChoice:
 else: 
     if firstChoice == 'rock':
         if secondChoice == 'paper':
-            print('player2 wins')
+            print('computer wins')
         else:
             print('player1 wins')
     elif firstChoice == 'paper':
         if secondChoice == 'scissors':
-            print('player2 wins')
+            print('computer wins')
         else:
             print('player1 wins')
     else:
         if secondChoice == 'rock':
-            print('player2 wins')
+            print('computer wins')
         else:
             print('player1 wins')
 
