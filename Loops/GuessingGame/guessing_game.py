@@ -1,15 +1,14 @@
 # demo while loop and conditionals with an ongoing game:
 
-from random import randint
-
-random_number = randint(1, 10)
-
 # Handle user guesses
 #   if they guess correct, tell them they won
 #   otherwise, tell them if they are too high or too low
 
 # Bonus - let player guess again if they want
 
+from random import randint
+
+random_number = randint(1, 10)
 end_game = False
 
 user_guess = None
