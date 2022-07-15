@@ -1,10 +1,8 @@
 print("...rock...")
 print("...paper...")
 print("...scissors...")
-print("(enter Player 1's choice): ")
-firstChoice = input();
-print("(enter Player 2's choice): ")
-secondChoice = input();
+firstChoice = input("(enter Player 1's choice): ");
+secondChoice = input("(enter Player 2's choice): ");
 print("Shoot!")
 
 if firstChoice == secondChoice:
