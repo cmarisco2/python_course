@@ -8,3 +8,7 @@ instructor = {
 # iterate over values:
 for val in instructor.values():
     print(val)
+
+# iterate over keys:
+for key in instructor.keys():
+    print(key)
