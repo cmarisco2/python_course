@@ -14,3 +14,6 @@ playlist = {
         {'title': 'meowmeow', 'artist': ['Garfield'], 'duration': 2}
     ]
 }
+
+for song in playlist['songs']:
+    print(song['title'])
