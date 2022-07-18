@@ -11,3 +11,9 @@ for num in numbers:
 print(f"List using loop is: {double_numbers}")
 
 # List Comprehension Version
+
+nums = [1, 2, 3, 4, 5]
+
+double_nums = [x * 2 for x in nums]
+
+print(f"List using comprehension is: {double_nums}")
