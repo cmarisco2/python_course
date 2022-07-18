@@ -12,3 +12,8 @@ for val in instructor.values():
 # iterate over keys:
 for key in instructor.keys():
     print(key)
+
+# iterate over keys and values:
+
+for key, value in instructor.items():
+    print(key, value)
