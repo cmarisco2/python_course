@@ -16,3 +16,9 @@ print("all elements of the list are:")
 for num_list in nested_list:
     for val in num_list:
         print(val)
+
+# nested list comprehension:
+
+board = [["x" if num % 2 == 1 else "o" for num in range(
+    1, 4)] for val in range(1, 5)]
+print(board)
