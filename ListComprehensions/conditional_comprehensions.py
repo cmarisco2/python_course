@@ -5,5 +5,10 @@ print(f"entire list: {numbers}")
 
 odd_nums = [x for x in numbers if x % 2 == 1]
 even_nums = [x for x in numbers if x % 2 == 0]
-print(f"odd numbers in list: {odd_nums}")
-print(f"even numbers in list: {even_nums}")
+print(f"odd numbers in list from 'if' list comprehension: {odd_nums}")
+print(f"even numbers in list from 'if' list comprehension: {even_nums}")
+
+# demo if/else list comprehension
+
+weird_nums = [x*x if x % 2 == 1 else x*2 for x in numbers]
+print(f"weird nums using if/else conditionals: {weird_nums}")
