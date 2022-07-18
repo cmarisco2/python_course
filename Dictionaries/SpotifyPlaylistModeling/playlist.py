@@ -8,12 +8,19 @@
 playlist = {
     'title': 'myFunk',
     'author': 'Chris',
-    'song': [
+    'songs': [
         {'title': 'song1', 'artist': ['blue'], 'duration': 2.5},
         {'title': 'song2', 'artist': ['kitty', 'djCat'], 'duration': 3.5},
         {'title': 'meowmeow', 'artist': ['Garfield'], 'duration': 2}
     ]
 }
 
+print(playlist)
+
+total_duration = 0
 for song in playlist['songs']:
-    print(song['title'])
+    total_duration += song['duration']
+
+print(
+    f"total time duration of the music in the playlist is: {total_duration} minutes"
+)
