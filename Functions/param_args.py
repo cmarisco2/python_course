@@ -21,7 +21,8 @@ def sum_nums(*args):
 
 
 def fav_colors(**kwargs):
-    print(kwargs)
+    for person, color in kwargs.items():
+        print(f"{person}'s favorit color is {color}")
 
 
 print(say_hello('Janice'))
