@@ -20,6 +20,10 @@ def sum_nums(*args):
     return total
 
 
+def fav_colors(**kwargs):
+    print(kwargs)
+
+
 print(say_hello('Janice'))
 
 print(multiply(3, 4))
@@ -37,3 +41,6 @@ print(say_hello.__doc__)
 print(sum_nums(1))
 print(sum_nums(1, 2))
 print(sum_nums(7, 5, 9, 15))
+
+# demo keyword args collected
+fav_colors(mine='red', michael='blue', mariah='purple')
