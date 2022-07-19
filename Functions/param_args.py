@@ -1,6 +1,7 @@
 # demo functions with parameters(in def) and arguments(in call)
 
 def say_hello(name):
+    """returns string 'say hello to' concatenated with a string argument provided by the user"""
     return f"say hello to {name}"
 
 
@@ -21,3 +22,6 @@ print(multiply(10))
 
 # keyword args
 print(exponent(power=3, base=4))
+
+# print doc for fn documentation
+print(say_hello.__doc__)
