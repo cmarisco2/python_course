@@ -13,6 +13,13 @@ def exponent(base, power=2):
     return base ** power
 
 
+def sum_nums(*args):
+    total = 0
+    for num in args:
+        total += num
+    return total
+
+
 print(say_hello('Janice'))
 
 print(multiply(3, 4))
@@ -25,3 +32,8 @@ print(exponent(power=3, base=4))
 
 # print doc for fn documentation
 print(say_hello.__doc__)
+
+# demo *args to show using various number of arguments in a function call
+print(sum_nums(1))
+print(sum_nums(1, 2))
+print(sum_nums(7, 5, 9, 15))
