@@ -5,4 +5,5 @@ def thy_name():
     print(f"Hi! My __name__ is {__name__}")
 
 
-thy_name()
+if __name__ == '__main__':
+    thy_name()
