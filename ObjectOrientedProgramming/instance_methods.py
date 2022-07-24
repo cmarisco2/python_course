@@ -1,5 +1,8 @@
 # demo creating instance methods:
 
+# SELF -> Always 1st parameter in definition
+# use self.attribute to use/update their values
+
 class User:
 
     def __init__(self, first, last, age):
