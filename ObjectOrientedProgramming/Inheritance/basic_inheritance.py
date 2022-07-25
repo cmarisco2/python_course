@@ -9,3 +9,6 @@ class Dog(Animal):
 
 a = Animal()
 a.make_sound('Rawr!!!')
+
+pepsi = Dog()
+pepsi.make_sound('Woof')
