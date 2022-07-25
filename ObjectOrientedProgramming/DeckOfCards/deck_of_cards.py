@@ -21,7 +21,18 @@ class Card:
         return f"{self.value} of {self.suit}"
 
 
-if __name__ == "__main__":
-    # my_card = Card('k', 30)
-    my_card = Card('Spades', 'A')
-    print(my_card)
+# if __name__ == "__main__":
+#     # my_card = Card('k', 30)
+#     my_card = Card('Spades', 'A')
+#     print(my_card)
+
+class Deck:
+
+    def __init__(self):
+        suits = ('Hearts', 'Diamonds', 'Clubs', 'Spades')
+        values = ('A', '2', '3', '4', '5', '6', '7',
+                  '8', '9', '10', 'J', 'Q', 'K')
+        self.cards = [Card(value, suit) for suit in suits for value in values]
+
+
+Deck()
