@@ -23,7 +23,7 @@ class QuickUnionFind:
         if i == j:
             return
 
-        if self._sz[i] < self._sz[j]:
+        if self._sz[i] <= self._sz[j]:
             self._id[i] = j
             self._sz[j] += self._sz[i]
         else:
@@ -32,6 +32,10 @@ class QuickUnionFind:
 
 
 uf = QuickUnionFind(6)
+print('test 0, 5')
+print('are they connected?')
 print(uf.is_connected(0, 5))
+print('connect 0, 5')
 uf.union(0, 5)
+print('are they connected?')
 print(uf.is_connected(0, 5))
