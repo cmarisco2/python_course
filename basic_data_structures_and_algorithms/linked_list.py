@@ -52,23 +52,24 @@ class LinkedList:
         return item
 
 
-my_list = LinkedList()
-print(my_list)
-print(f'is my_list empty? {my_list.is_empty()}')
-stuff = ['hello', 17, 22.49]
-print(f'adding the elements to my_list:{stuff}')
-for thing in stuff:
-    my_list.add(thing)
-print(f'is my_list empty? {my_list.is_empty()}')
-print(f'my_list has a size of {my_list.size()}')
-print(f'my list: {my_list}')
-print(f'removing first item in my_list: {my_list.remove()}')
-print(f'my list afterwards: {my_list}')
-print(f'is my_list empty? {my_list.is_empty()}')
-print(f'my_list has a size of {my_list.size()}')
-print(f'emptying my list:')
-while my_list.size() > 0:
-    my_list.remove()
-print(f'my list afterwards: {my_list}')
-print(f'is my_list empty? {my_list.is_empty()}')
-print(f'my_list has a size of {my_list.size()}')
+if __name__ == '__main__':
+    my_list = LinkedList()
+    print(my_list)
+    print(f'is my_list empty? {my_list.is_empty()}')
+    stuff = ['hello', 17, 22.49]
+    print(f'adding the elements to my_list:{stuff}')
+    for thing in stuff:
+        my_list.add(thing)
+    print(f'is my_list empty? {my_list.is_empty()}')
+    print(f'my_list has a size of {my_list.size()}')
+    print(f'my list: {my_list}')
+    print(f'removing first item in my_list: {my_list.remove()}')
+    print(f'my list afterwards: {my_list}')
+    print(f'is my_list empty? {my_list.is_empty()}')
+    print(f'my_list has a size of {my_list.size()}')
+    print(f'emptying my list:')
+    while my_list.size() > 0:
+        my_list.remove()
+    print(f'my list afterwards: {my_list}')
+    print(f'is my_list empty? {my_list.is_empty()}')
+    print(f'my_list has a size of {my_list.size()}')
