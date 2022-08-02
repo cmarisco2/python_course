@@ -15,6 +15,7 @@ scalar_product = a.dot(b)
 mag_a = np.linalg.norm(a)
 mag_b = np.linalg.norm(b)
 
+
 angle = np.arccos(scalar_product/(mag_a * mag_b))
 angle = round(angle, 2)
 print(f'angle in radians: {angle}')
