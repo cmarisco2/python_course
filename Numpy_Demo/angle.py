@@ -1,4 +1,4 @@
-from math import sin
+from math import cos, sin
 import numpy as np
 
 
@@ -27,20 +27,20 @@ def roll(vec_A, vec_B):
     return np.rad2deg(angle)
 
 
-vecA = [3, 3]
-vecB = [-4, 4]
-vector_b = np.squeeze(np.asarray(vecB))
-vector_a = np.squeeze(np.asarray(vecA))
-print(vector_a.dot(vector_b))
+# NEED LOCATION FOR LEFT AND RIGHT
+vecB = np.array([0, 4])
+vecA = np.array([2, 1])
+scale = vecA.dot(vecB)
+print(scale)
 angle = roll(vecA, vecB)
 print(angle)
+print(cos(angle))
 
 print()
 
-vecA = [-3, -3]
-vecB = [-4, 4]
-vector_b = np.squeeze(np.asarray(vecB))
-vector_a = np.squeeze(np.asarray(vecA))
-print(vector_a.dot(vector_b))
+vecA = np.array([-2, 1])
+scale = vecA.dot(vecB)
+print(scale)
 angle = roll(vecA, vecB)
 print(angle)
+print(cos(angle))
