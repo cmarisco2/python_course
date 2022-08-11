@@ -30,3 +30,11 @@ class Penguine(Aquatic, Ambulatory):
 jaws = Aquatic("JAWS")
 lassie = Ambulatory('LASSIE')
 marina = Penguine("MARINA")
+
+print(marina.swim())
+print(marina.walk())
+print(marina.hi())
+
+print(
+    f"\nMarina's hi method is prioritized by which class is inherited first [Rd as 'left-most arg'] in the multiple inheritance arguments passed"
+)
