@@ -1,5 +1,8 @@
 # demo multiple inheritence features of python
 
+# mro - Method Resolution Order
+# algorithm -> local, 1st Parent, 2nd Parent, ... , Nth Parent, Object
+
 class Aquatic:
     def __init__(self, name) -> None:
         self.name = name
