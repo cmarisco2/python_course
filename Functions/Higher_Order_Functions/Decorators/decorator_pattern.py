@@ -2,7 +2,13 @@
 
 
 # Create a decorator fn that returns the upper case of any string with any number of positional/keyword arguments
+
+# Preserves metadata of the original wrapped function
+from functools import wraps
+
+
 def shout(fn):
+    @wraps
     def wrapper(*args, **kwargs):
         return fn(*args, **kwargs).upper()
     return wrapper
