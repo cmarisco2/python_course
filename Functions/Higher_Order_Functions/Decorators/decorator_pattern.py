@@ -8,7 +8,7 @@ from functools import wraps
 
 
 def shout(fn):
-    @wraps
+    @wraps(fn)
     def wrapper(*args, **kwargs):
         return fn(*args, **kwargs).upper()
     return wrapper
@@ -16,16 +16,19 @@ def shout(fn):
 
 @shout
 def order(main, side):
+    """Uses main and side args for dish orders"""
     return f"I would like an order of {main} with a side of {side} please"
 
 
 @shout
 def greet(name):
+    """Greets the name passed"""
     return f"Hello, my name is {name}"
 
 
 @shout
 def lol():
+    """returns string 'lol' """
     return 'lol'
 
 
