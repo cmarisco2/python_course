@@ -27,6 +27,11 @@ class ExampleTester(unittest.TestCase):
         """Ensure that Tim is Not Funny!"""
         self.assertFalse(is_funny('Tim'), "Should Not be funny")
 
+    def test_is_funny_type_error(self):
+        """is_funny must take a String """
+        with self.assertRaises(TypeError):
+            is_funny(True)
+
 
 # 4 -> run unittest.main() only if the test function is run
 if __name__ == "__main__":
